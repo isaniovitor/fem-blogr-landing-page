@@ -1,0 +1,2 @@
+"use strict";console.log("HELLO");var test=function(){console.log("this is a test")},close=document.querySelector(".close"),menu=document.querySelector(".menu-hamburger"),open=document.querySelector("#open-hamburger");close.addEventListener("click",(function(){menu.classList.add("hide"),menu.classList.remove("open"),open.classList.remove("hide"),open.classList.add("open")})),open.addEventListener("click",(function(){menu.classList.add("open"),menu.classList.remove("hide"),open.classList.add("hide"),open.classList.remove("open")}));
+//# sourceMappingURL=script.js.map

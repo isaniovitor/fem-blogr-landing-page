@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+@use '../base/colors' as *;
+
+.header {
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    //background-color: orchid;
+
+    padding: rem(54) 0 0 0;
+    //margin: 0 auto;
+
+    &__logo {
+      width: rem(83);
+      height: 2.1rem;
+    }
+  }
+}

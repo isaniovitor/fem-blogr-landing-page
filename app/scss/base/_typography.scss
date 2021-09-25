@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+@use './app/scss/base/colors' as *;
+
+h1 {
+  color: $very-dark-blue-eadings;
+}
+
+p {
+  color: $very-dark-grayish-blue-body-copy;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}

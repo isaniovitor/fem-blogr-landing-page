@@ -1,0 +1,48 @@
+//@use '../abstracts' as *;
+@use './app/scss/base/colors' as *;
+
+.footer {
+  background: $very-dark-black-blue-footer-background;
+  border-top-right-radius: 100px;
+
+  padding: 77px 0 0 0;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+
+  > img {
+    width: 6.5rem;
+    height: auto;
+  }
+
+  > nav {
+    padding-top: 80px;
+    // display: flex;
+    // align-items: center;
+    // align-content: center;
+    // flex-direction: column;
+
+    .row {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+
+      gap: 10px;
+      padding-bottom: 45px;
+
+      > h3 {
+        color: $white-text;
+        font-size: 20px;
+        padding-bottom: 18px;
+      }
+
+      > a {
+        color: $grayish-blue-footer-text;
+        font-size: 19px;
+      }
+    }
+  }
+}

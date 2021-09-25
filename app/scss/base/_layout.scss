@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+@use '../base/colors' as *;
+
+.container {
+  padding: 0 1.4rem;
+  margin: 0 auto;
+  max-width: rem(1440);
+}

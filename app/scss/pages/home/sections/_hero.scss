@@ -1,0 +1,104 @@
+@use './app/scss/base/colors' as *;
+
+.hero {
+  padding-top: 87.59px;
+  height: 600px;
+
+  //background: linear-gradient(135deg, $light-red, $very-light-red);
+
+  background-image: url(/app/images/bg-pattern-intro.svg),
+    linear-gradient(0deg, $light-red, $very-light-red);
+  background-size: 350%, 100%;
+  background-position: 35% 34%, 0% 0%;
+  background-repeat: no-repeat, no-repeat;
+  border-bottom-left-radius: 100px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 112px 0;
+    text-align: center;
+
+    > h1 {
+      // font-size: 30px;
+      padding-bottom: 18px;
+
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 2.9rem;
+
+      color: $white-text;
+    }
+
+    > p {
+      font-size: 18px;
+
+      color: $white-text;
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-around;
+
+      margin-top: 49px;
+      width: 95%;
+
+      > a {
+        padding: 14px 0px;
+        border-radius: 5rem;
+        width: 140px;
+
+        font-weight: 700;
+        font-family: Ubuntu, sans-serif;
+
+        color: $white-text;
+        border: 1px solid $white-text;
+
+        &.start-button {
+          background-color: $white-text;
+          color: $light-red-CTA-text;
+
+          &:hover {
+            background-color: $very-light-red-CTA-hover-background;
+            color: $white-text;
+
+            // & div:not(:hover){
+            //   color: $white-text;
+            // }
+
+            // div{
+            //   &:hover{
+            //     color: $white-text;
+            //   }
+            // }
+          }
+        }
+
+        &.learn-button {
+          //background-color: $white-text;
+          color: $white-text;
+
+          &:hover {
+            background-color: $white-text;
+            color: $white-text;
+            color: $light-red-CTA-text;
+
+            // & div:not(:hover){
+            //   color: $white-text;
+            // }
+
+            // div{
+            //   &:hover{
+            //     color: $white-text;
+            //   }
+            // }
+          }
+        }
+      }
+    }
+  }
+}
